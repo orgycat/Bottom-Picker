@@ -508,8 +508,9 @@ class _BottomPickerState extends State<BottomPicker> {
   Widget build(BuildContext context) {
     return Container(
       height: widget.height ?? context.bottomPickerHeight,
+      width: double.infinity,
       decoration: BoxDecoration(
-        color: Colors.red,
+        color: widget.backgroundColor,
         borderRadius: const BorderRadius.only(
           topRight: Radius.circular(20),
           topLeft: Radius.circular(20),
